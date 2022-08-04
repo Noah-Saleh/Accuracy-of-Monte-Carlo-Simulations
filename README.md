@@ -87,16 +87,36 @@ If you're interested in days, specify n = 7. If you're interested in +/- 7 calen
 
 ## Usage
 
-### Example 1:  
-You are a company board-member considering a CEO change, and you want to know the potential effects of such a big decision.
+### Example cases: 
 
-Pictures of parts of the notebook:
+You are interested in general exploration to see if you can find any patterns. 
 
-![A picture of a graph](/usage_example1.png)  
-![A picture of a data table](./usage_example2.png)  
+You are a company board-member considering a CEO change, and you want to know the potential effects of such a big decision on the stock price. 
 
-### Example 2:
 You are a trader, and an announcement has just been publicly made. The stock significantly changed in value. You are interested to see if this additional volatility was because of the CEO change, or some other reason. You are thinking about trading the volatility, or buying/selling more shares for the long term. You're not sure if the dramatic change in stock price is normal or not. You want to find out more. 
+
+### Analytical Methods
+
+Specifying the timeframe of interest (n) before and after the event is important. Additionally, other factors (such as covid) could cause fluctuations in stock prices as well, so keeping this in mind is important when investigating further. 
+
+For example, with the n = 7 case (7 trading days before and after the CEO change was announced), a few plots can give you some really important insights into the data.
+
+Exploring the raw data helps give you a better overall understanding of each stock. Using bar charts and line graphs and comparing them between companies can be really useful. 
+
+![Bar chart](Images/Stock_bar_chart_comparison.PNG)
+
+Compare cumulative returns so that you can understand how the stock price changes before and after the announcement.
+
+![Cumulative returns lines](Images/cum_returns_lines.PNG)
+![Cumulative returns](Images/cum_returns_n_is_7.PNG)
+
+Instead of annualized returns (based on a 1 year trading period), -ized statistics can be compared using a different number of trading days. 
+
+![Ized](Images/ized_7_day.PNG)
+
+Violin plots can help you get a better understanding of where volatility spreads occur in the dataset. 
+
+![Violin](Images/Volatility_violin.PNG)
 
 You can use Monte Carlo Simulations based on the historical performance of the stock to determine if the stock price change you're seeing is just part of the day to day volatility or if it's due to the announcement. 
 
@@ -105,6 +125,9 @@ First, specify your input variables.
 
 Run the code to find out if the stock price fluctuation is beyond the 95% significance levels. If the stock price fluctuation is beyond 95% significance levels, day to day volatilty (given the historical data the Monte Carlo simulation used) likely can't explain the significant stock price change. The announcement must have something to do with it. 
 ![Inputs](Images/MC_Outputs.PNG)
+
+Given the assumptions specified in the input variables section, assuming 95% confidence intervals (or other percentile limits), can help you identify if stock prices were significantly affected by the CEO change announcements, or if the stock price changes could be explained by general volatility. 
+![Ouputs](Images/MC_results.PNG)
 
 ### More data?
 
@@ -115,11 +138,11 @@ If there's more data to analyze, simply include the additional information in th
 ## Contributors
 
 Jake Wheeler  
-email:   
+email:jakewheelersemail@gmail.com   
 git hub: JakeWheelerGitHub  
 
 Jerome Bright  
-email:  
+email:Jerome.Bright1@gmail.com  
 git hub: JHBright  
 
 Noah Saleh  
