@@ -149,7 +149,7 @@ Noah Saleh
 email: noahgsaleh@gmail.com  
 git hub: Noah-Saleh  
 
-Paul Koziol  
+Paula Koziol  
 email: cocoapollywog@gmail.com  
 git hub: ai-to-the-moon
 
