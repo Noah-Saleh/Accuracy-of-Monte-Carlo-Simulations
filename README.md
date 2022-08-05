@@ -1,4 +1,8 @@
 # Effects of a CEO Change  
+
+THIS GITHUB IS OUTDATE. GO TO THIS UPDATE VERSION: https://github.com/Noah-Saleh/Impact-of-CEO-Change
+
+
 ## Summary of Purpose  
 
 This is an analysis of the effects a CEO change has on the stock-price of a company using Jupyter Notebooks.
